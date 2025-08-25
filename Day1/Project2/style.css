@@ -1,13 +1,38 @@
 body {
     text-align: center;
-    background-color: #222;
-    color: white;
-    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 20px 0 10px 0;
+    text-shadow: 2px 2px 4px #000;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 5px 0 20px 0;
 }
 
 canvas {
-    background-color: #333;
+    background: radial-gradient(circle at center, #444, #111);
     display: block;
     margin: 0 auto;
-    border: 2px solid white;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00ffff;
+}
+
+/* Paddle */
+.paddle-glow {
+    box-shadow: 0 0 15px #00ffff;
+}
+
+/* Ball */
+.ball-glow {
+    box-shadow: 0 0 15px red;
 }

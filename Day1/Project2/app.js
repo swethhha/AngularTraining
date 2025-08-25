@@ -3,26 +3,32 @@ var ctx = canvas.getContext("2d");
 var paddleWidth = 100;
 var paddleHeight = 10;
 var paddleX = canvas.width / 2 - paddleWidth / 2;
-var paddleSpeed = 7;
+var paddleSpeed = 8; // slightly faster paddle
 var paddleDX = 0;
 var ballRadius = 10;
 var ballX = canvas.width / 2;
 var ballY = canvas.height / 2;
-var ballDX = 4;
-var ballDY = -4;
+var ballDX = 5; // initial speed
+var ballDY = -5;
 var score = 0;
-// Draw paddle
+// Draw paddle with glow
 function drawPaddle() {
-    ctx.fillStyle = "blue";
+    ctx.fillStyle = "#00ffff";
+    ctx.shadowColor = "#00ffff";
+    ctx.shadowBlur = 15;
     ctx.fillRect(paddleX, canvas.height - paddleHeight - 10, paddleWidth, paddleHeight);
+    ctx.shadowBlur = 0;
 }
-// Draw ball
+// Draw ball with glow
 function drawBall() {
     ctx.beginPath();
     ctx.arc(ballX, ballY, ballRadius, 0, Math.PI * 2);
     ctx.fillStyle = "red";
+    ctx.shadowColor = "red";
+    ctx.shadowBlur = 15;
     ctx.fill();
     ctx.closePath();
+    ctx.shadowBlur = 0;
 }
 // Draw everything
 function draw() {
@@ -54,6 +60,11 @@ function moveBall() {
         ballX < paddleX + paddleWidth) {
         ballDY *= -1;
         score++;
+        // Gradually increase speed every 3 points
+        if (score % 3 === 0) {
+            ballDX *= 1.1;
+            ballDY *= 1.1;
+        }
     }
     // Bottom collision - Game Over
     if (ballY + ballRadius > canvas.height) {
@@ -66,8 +77,8 @@ function resetGame() {
     paddleX = canvas.width / 2 - paddleWidth / 2;
     ballX = canvas.width / 2;
     ballY = canvas.height / 2;
-    ballDX = 4;
-    ballDY = -4;
+    ballDX = 5;
+    ballDY = -5;
     score = 0;
 }
 // Key handlers
