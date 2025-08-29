@@ -1,0 +1,38 @@
+<div class="bugs-container">
+  <h1><i class="pi pi-bug"></i> Bug Reports</h1>
+  
+  <p-card>
+    <ng-template pTemplate="header">
+      <div class="card-header">
+        <span>All Bugs</span>
+        <button pButton label="New Bug" icon="pi pi-plus" class="p-button-primary"></button>
+      </div>
+    </ng-template>
+    
+    <p-table [value]="bugs" [tableStyle]="{'min-width': '50rem'}">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Severity</th>
+          <th>Status</th>
+          <th>Assignee</th>
+          <th>Actions</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-bug>
+        <tr>
+          <td>{{bug.id}}</td>
+          <td>{{bug.title}}</td>
+          <td><p-tag [value]="bug.severity" [severity]="getSeverityClass(bug.severity)"></p-tag></td>
+          <td><p-tag [value]="bug.status" [severity]="getStatusClass(bug.status)"></p-tag></td>
+          <td>{{bug.assignee}}</td>
+          <td>
+            <button pButton icon="pi pi-eye" class="p-button-text p-button-sm" pTooltip="View"></button>
+            <button pButton icon="pi pi-pencil" class="p-button-text p-button-sm" pTooltip="Edit"></button>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </p-card>
+</div>
