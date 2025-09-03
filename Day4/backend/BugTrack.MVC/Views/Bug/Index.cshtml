@@ -1,0 +1,43 @@
+﻿@model IEnumerable<BugTrack.MVC.Models.BugViewModel>
+
+@{
+    ViewData["Title"] = "Bugs List";
+}
+
+<h2>Bugs List</h2>
+
+<table class="table table-striped table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Status</th>
+            <th>Project</th>
+            <th>Created On</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var bug in Model)
+            {
+                <tr>
+                    <td>@bug.Id</td>
+                    <td>@bug.Title</td>
+                    <td>@bug.Status</td>
+                    <td>@bug.CreatedOn.ToString("yyyy-MM-dd")</td>
+                    <td>
+                        <a asp-controller="Bug" asp-action="Details" asp-route-id="@bug.Id" class="btn btn-sm btn-info">Details</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="6" class="text-center text-muted">No bugs found.</td>
+            </tr>
+        }
+    </tbody>
+</table>

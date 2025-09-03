@@ -1,0 +1,43 @@
+/* PrimeNG Menubar */
+.p-menubar {
+  background: #385e7e !important;
+  border: none !important;
+  padding: 0.6rem 1.2rem;
+}
+
+.p-menubar .p-menuitem-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.p-menubar .p-menuitem-link:hover {
+  background: rgba(255, 255, 255, 0.25) !important;
+}
+
+.p-menubar .p-menubar-start h2 {
+  color: #fff !important;
+  font-size: 20px;
+}
+
+/* Drawer */
+.p-drawer h3 {
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.p-drawer div {
+  margin-bottom: 0.5rem;
+}
+
+.p-drawer a {
+  display: block;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.p-drawer a:hover {
+  background: #e2e8f0;
+}

@@ -1,0 +1,316 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DBDF6A12-5EAF-41C2-B1ED-45898C3743D7}|BugTrack.API\\BugTrack.API.csproj|c:\\users\\swetht\\source\\repos\\angulartraining\\day4\\backend\\bugtrack.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBDF6A12-5EAF-41C2-B1ED-45898C3743D7}|BugTrack.API\\BugTrack.API.csproj|solutionrelative:bugtrack.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBDF6A12-5EAF-41C2-B1ED-45898C3743D7}|BugTrack.API\\BugTrack.API.csproj|c:\\users\\swetht\\source\\repos\\angulartraining\\day4\\backend\\bugtrack.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBDF6A12-5EAF-41C2-B1ED-45898C3743D7}|BugTrack.API\\BugTrack.API.csproj|solutionrelative:bugtrack.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBDF6A12-5EAF-41C2-B1ED-45898C3743D7}|BugTrack.API\\BugTrack.API.csproj|c:\\users\\swetht\\source\\repos\\angulartraining\\day4\\backend\\bugtrack.api\\controllers\\bugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBDF6A12-5EAF-41C2-B1ED-45898C3743D7}|BugTrack.API\\BugTrack.API.csproj|solutionrelative:bugtrack.api\\controllers\\bugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7756E9F1-5191-4E1F-9D3B-643A49DD8A5C}|BugTrack.Core\\BugTrack.Core.csproj|c:\\users\\swetht\\source\\repos\\angulartraining\\day4\\backend\\bugtrack.core\\entities\\bug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7756E9F1-5191-4E1F-9D3B-643A49DD8A5C}|BugTrack.Core\\BugTrack.Core.csproj|solutionrelative:bugtrack.core\\entities\\bug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBDF6A12-5EAF-41C2-B1ED-45898C3743D7}|BugTrack.API\\BugTrack.API.csproj|c:\\users\\swetht\\source\\repos\\angulartraining\\day4\\backend\\bugtrack.api\\middleware\\globalexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBDF6A12-5EAF-41C2-B1ED-45898C3743D7}|BugTrack.API\\BugTrack.API.csproj|solutionrelative:bugtrack.api\\middleware\\globalexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBDF6A12-5EAF-41C2-B1ED-45898C3743D7}|BugTrack.API\\BugTrack.API.csproj|c:\\users\\swetht\\source\\repos\\angulartraining\\day4\\backend\\bugtrack.api\\extensions\\exceptionmiddlewareexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBDF6A12-5EAF-41C2-B1ED-45898C3743D7}|BugTrack.API\\BugTrack.API.csproj|solutionrelative:bugtrack.api\\extensions\\exceptionmiddlewareexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBDF6A12-5EAF-41C2-B1ED-45898C3743D7}|BugTrack.API\\BugTrack.API.csproj|c:\\users\\swetht\\source\\repos\\angulartraining\\day4\\backend\\bugtrack.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DBDF6A12-5EAF-41C2-B1ED-45898C3743D7}|BugTrack.API\\BugTrack.API.csproj|solutionrelative:bugtrack.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9360817F-F1E9-42F4-9629-8A358A3B14A5}|BugTrack.Infrastructure\\BugTrack.Infrastructure.csproj|c:\\users\\swetht\\source\\repos\\angulartraining\\day4\\backend\\bugtrack.infrastructure\\repositories\\projectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9360817F-F1E9-42F4-9629-8A358A3B14A5}|BugTrack.Infrastructure\\BugTrack.Infrastructure.csproj|solutionrelative:bugtrack.infrastructure\\repositories\\projectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9360817F-F1E9-42F4-9629-8A358A3B14A5}|BugTrack.Infrastructure\\BugTrack.Infrastructure.csproj|c:\\users\\swetht\\source\\repos\\angulartraining\\day4\\backend\\bugtrack.infrastructure\\repositories\\bugrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9360817F-F1E9-42F4-9629-8A358A3B14A5}|BugTrack.Infrastructure\\BugTrack.Infrastructure.csproj|solutionrelative:bugtrack.infrastructure\\repositories\\bugrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7756E9F1-5191-4E1F-9D3B-643A49DD8A5C}|BugTrack.Core\\BugTrack.Core.csproj|c:\\users\\swetht\\source\\repos\\angulartraining\\day4\\backend\\bugtrack.core\\dtos\\errorresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7756E9F1-5191-4E1F-9D3B-643A49DD8A5C}|BugTrack.Core\\BugTrack.Core.csproj|solutionrelative:bugtrack.core\\dtos\\errorresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7756E9F1-5191-4E1F-9D3B-643A49DD8A5C}|BugTrack.Core\\BugTrack.Core.csproj|c:\\users\\swetht\\source\\repos\\angulartraining\\day4\\backend\\bugtrack.core\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7756E9F1-5191-4E1F-9D3B-643A49DD8A5C}|BugTrack.Core\\BugTrack.Core.csproj|solutionrelative:bugtrack.core\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7756E9F1-5191-4E1F-9D3B-643A49DD8A5C}|BugTrack.Core\\BugTrack.Core.csproj|c:\\users\\swetht\\source\\repos\\angulartraining\\day4\\backend\\bugtrack.core\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7756E9F1-5191-4E1F-9D3B-643A49DD8A5C}|BugTrack.Core\\BugTrack.Core.csproj|solutionrelative:bugtrack.core\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBDF6A12-5EAF-41C2-B1ED-45898C3743D7}|BugTrack.API\\BugTrack.API.csproj|c:\\users\\swetht\\source\\repos\\angulartraining\\day4\\backend\\bugtrack.api\\bugtrack.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DBDF6A12-5EAF-41C2-B1ED-45898C3743D7}|BugTrack.API\\BugTrack.API.csproj|solutionrelative:bugtrack.api\\bugtrack.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F40B7FF-68A4-4DEC-8BC4-365E86B10C56}|BugTrack.MVC\\BugTrack.MVC.csproj|c:\\users\\swetht\\source\\repos\\angulartraining\\day4\\backend\\bugtrack.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F40B7FF-68A4-4DEC-8BC4-365E86B10C56}|BugTrack.MVC\\BugTrack.MVC.csproj|solutionrelative:bugtrack.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7756E9F1-5191-4E1F-9D3B-643A49DD8A5C}|BugTrack.Core\\BugTrack.Core.csproj|c:\\users\\swetht\\source\\repos\\angulartraining\\day4\\backend\\bugtrack.core\\dtos\\projectresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7756E9F1-5191-4E1F-9D3B-643A49DD8A5C}|BugTrack.Core\\BugTrack.Core.csproj|solutionrelative:bugtrack.core\\dtos\\projectresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F40B7FF-68A4-4DEC-8BC4-365E86B10C56}|BugTrack.MVC\\BugTrack.MVC.csproj|c:\\users\\swetht\\source\\repos\\angulartraining\\day4\\backend\\bugtrack.mvc\\views\\bug\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F40B7FF-68A4-4DEC-8BC4-365E86B10C56}|BugTrack.MVC\\BugTrack.MVC.csproj|solutionrelative:bugtrack.mvc\\views\\bug\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7756E9F1-5191-4E1F-9D3B-643A49DD8A5C}|BugTrack.Core\\BugTrack.Core.csproj|c:\\users\\swetht\\source\\repos\\angulartraining\\day4\\backend\\bugtrack.core\\entities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7756E9F1-5191-4E1F-9D3B-643A49DD8A5C}|BugTrack.Core\\BugTrack.Core.csproj|solutionrelative:bugtrack.core\\entities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 257,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ExceptionMiddlewareException.cs",
+              "DocumentMoniker": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.API\\Extensions\\ExceptionMiddlewareException.cs",
+              "RelativeDocumentMoniker": "BugTrack.API\\Extensions\\ExceptionMiddlewareException.cs",
+              "ToolTip": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.API\\Extensions\\ExceptionMiddlewareException.cs",
+              "RelativeToolTip": "BugTrack.API\\Extensions\\ExceptionMiddlewareException.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T09:16:35.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProjectRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.Infrastructure\\Repositories\\ProjectRepository.cs",
+              "RelativeDocumentMoniker": "BugTrack.Infrastructure\\Repositories\\ProjectRepository.cs",
+              "ToolTip": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.Infrastructure\\Repositories\\ProjectRepository.cs",
+              "RelativeToolTip": "BugTrack.Infrastructure\\Repositories\\ProjectRepository.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T08:56:18.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BugRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.Infrastructure\\Repositories\\BugRepository.cs",
+              "RelativeDocumentMoniker": "BugTrack.Infrastructure\\Repositories\\BugRepository.cs",
+              "ToolTip": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.Infrastructure\\Repositories\\BugRepository.cs",
+              "RelativeToolTip": "BugTrack.Infrastructure\\Repositories\\BugRepository.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T08:56:12.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ErrorResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.Core\\DTOs\\ErrorResponseDTO.cs",
+              "RelativeDocumentMoniker": "BugTrack.Core\\DTOs\\ErrorResponseDTO.cs",
+              "ToolTip": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.Core\\DTOs\\ErrorResponseDTO.cs",
+              "RelativeToolTip": "BugTrack.Core\\DTOs\\ErrorResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T08:56:02.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BugController.cs",
+              "DocumentMoniker": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.API\\Controllers\\BugController.cs",
+              "RelativeDocumentMoniker": "BugTrack.API\\Controllers\\BugController.cs",
+              "ToolTip": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.API\\Controllers\\BugController.cs",
+              "RelativeToolTip": "BugTrack.API\\Controllers\\BugController.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAAAHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T05:29:22.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "BugTrack.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "BugTrack.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAUwB8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T05:26:24.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BugTrack.API.csproj",
+              "DocumentMoniker": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.API\\BugTrack.API.csproj",
+              "RelativeDocumentMoniker": "BugTrack.API\\BugTrack.API.csproj",
+              "ToolTip": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.API\\BugTrack.API.csproj",
+              "RelativeToolTip": "BugTrack.API\\BugTrack.API.csproj",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-21T05:22:56.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.Core\\DTOs\\AuthResponseDTO.cs",
+              "RelativeDocumentMoniker": "BugTrack.Core\\DTOs\\AuthResponseDTO.cs",
+              "ToolTip": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.Core\\DTOs\\AuthResponseDTO.cs",
+              "RelativeToolTip": "BugTrack.Core\\DTOs\\AuthResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T05:06:56.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.Core\\DTOs\\LoginRequestDTO.cs",
+              "RelativeDocumentMoniker": "BugTrack.Core\\DTOs\\LoginRequestDTO.cs",
+              "ToolTip": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.Core\\DTOs\\LoginRequestDTO.cs",
+              "RelativeToolTip": "BugTrack.Core\\DTOs\\LoginRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T05:04:33.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.API\\appsettings.json",
+              "RelativeDocumentMoniker": "BugTrack.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.API\\appsettings.json",
+              "RelativeToolTip": "BugTrack.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-21T04:58:30.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GlobalExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.API\\Middleware\\GlobalExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "BugTrack.API\\Middleware\\GlobalExceptionMiddleware.cs",
+              "ToolTip": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.API\\Middleware\\GlobalExceptionMiddleware.cs",
+              "RelativeToolTip": "BugTrack.API\\Middleware\\GlobalExceptionMiddleware.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T16:20:47.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Project.cs",
+              "DocumentMoniker": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.Core\\Entities\\Project.cs",
+              "RelativeDocumentMoniker": "BugTrack.Core\\Entities\\Project.cs",
+              "ToolTip": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.Core\\Entities\\Project.cs",
+              "RelativeToolTip": "BugTrack.Core\\Entities\\Project.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T04:45:47.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Bug.cs",
+              "DocumentMoniker": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.Core\\Entities\\Bug.cs",
+              "RelativeDocumentMoniker": "BugTrack.Core\\Entities\\Bug.cs",
+              "ToolTip": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.Core\\Entities\\Bug.cs",
+              "RelativeToolTip": "BugTrack.Core\\Entities\\Bug.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA8wBQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T04:45:36.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProjectResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.Core\\DTOs\\ProjectResponseDTO.cs",
+              "RelativeDocumentMoniker": "BugTrack.Core\\DTOs\\ProjectResponseDTO.cs",
+              "ToolTip": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.Core\\DTOs\\ProjectResponseDTO.cs",
+              "RelativeToolTip": "BugTrack.Core\\DTOs\\ProjectResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T05:08:25.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.MVC\\Program.cs",
+              "RelativeDocumentMoniker": "BugTrack.MVC\\Program.cs",
+              "ToolTip": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.MVC\\Program.cs",
+              "RelativeToolTip": "BugTrack.MVC\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T04:50:32.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.MVC\\Views\\Bug\\Details.cshtml",
+              "RelativeDocumentMoniker": "BugTrack.MVC\\Views\\Bug\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.MVC\\Views\\Bug\\Details.cshtml",
+              "RelativeToolTip": "BugTrack.MVC\\Views\\Bug\\Details.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAcwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-19T05:24:37.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.API\\Program.cs",
+              "RelativeDocumentMoniker": "BugTrack.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Swetht\\source\\repos\\AngularTraining\\Day4\\backend\\BugTrack.API\\Program.cs",
+              "RelativeToolTip": "BugTrack.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:43:53.394Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 143,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

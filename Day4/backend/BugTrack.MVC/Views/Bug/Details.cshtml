@@ -1,0 +1,33 @@
+﻿@model BugTrack.MVC.Models.BugViewModel
+
+@{
+    ViewData["Title"] = "Bug Details";
+}
+
+<h2>Bug Details</h2>
+
+<div class="card shadow-sm p-4">
+    <dl class="row">
+        <dt class="col-sm-3">Id</dt>
+        <dd class="col-sm-9">@Model.Id</dd>
+
+        <dt class="col-sm-3">Title</dt>
+        <dd class="col-sm-9">@Model.Title</dd>
+
+        <dt class="col-sm-3">Description</dt>
+        <dd class="col-sm-9">@Model.Description</dd>
+
+        <dt class="col-sm-3">Status</dt>
+        <dd class="col-sm-9">@Model.Status</dd>
+
+        @* <dt class="col-sm-3">Project</dt>
+        <dd class="col-sm-9">@Model.ProjectName ?? "N/A"</dd> *@
+
+        <dt class="col-sm-3">Created On</dt>
+        <dd class="col-sm-9">@Model.CreatedOn.ToString("yyyy-MM-dd")</dd>
+    </dl>
+
+    <div class="mt-3">
+        <a asp-controller="Bug" asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>
