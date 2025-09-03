@@ -1,0 +1,29 @@
+<p-menubar [model]="menuItems">
+  <ng-template pTemplate="start">
+    <h2 style="margin:0;">{{appName}}</h2>
+  </ng-template>
+  <ng-template pTemplate="end">
+    <button pButton type="button" icon="pi pi-bars" (click)="sidebarVisible = true"></button>
+  </ng-template>
+</p-menubar>
+
+<p-drawer [(visible)]="sidebarVisible" position="left" [modal]="true" [showCloseIcon]="true">
+  <h3 style="margin:10px;">Menu</h3>
+  <div *ngFor="let item of menuItems">
+    <ng-container *ngIf="hasRouterLink(item); else commandButton">
+      <a [routerLink]="getRouterLink(item)" (click)="sidebarVisible = false" class="menu-item">
+        <i [class]="item.icon"></i> {{ item.label }}
+      </a>
+    </ng-container>
+    <ng-template #commandButton>
+      <button *ngIf="hasCommand(item)" (click)="executeCommand(item)" 
+              [class]="item.label === 'Logout' ? 'logout-btn' : 'menu-item'">
+        <i [class]="item.icon"></i> {{ item.label }}
+      </button>
+    </ng-template>
+  </div>
+</p-drawer>
+
+<main style="padding:16px;">
+  <router-outlet></router-outlet>
+</main>

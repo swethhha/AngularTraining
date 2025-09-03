@@ -1,0 +1,137 @@
+/* Modern Navigation Bar */
+.p-menubar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border: none !important;
+  padding: 0.8rem 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 12px 12px;
+}
+
+.p-menubar .p-menuitem-link {
+  color: #fff !important;
+  font-weight: 600;
+  padding: 0.75rem 1rem !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+}
+
+.p-menubar .p-menuitem-link:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.p-menubar .p-menubar-start h2 {
+  color: #fff !important;
+  font-size: 24px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+
+.p-menubar .p-menubar-end button {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  color: #fff !important;
+  border-radius: 50% !important;
+  width: 45px !important;
+  height: 45px !important;
+  transition: all 0.3s ease !important;
+}
+
+.p-menubar .p-menubar-end button:hover {
+  background: rgba(255, 255, 255, 0.3) !important;
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Modern Drawer */
+.p-drawer {
+  background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%) !important;
+}
+
+.p-drawer h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2d3748;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.p-drawer .p-drawer-content {
+  padding: 1.5rem !important;
+}
+
+/* Menu Items Styling */
+.menu-item {
+  display: block;
+  padding: 12px 16px;
+  margin: 8px 0;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #4a5568;
+  font-weight: 500;
+  border: 2px solid transparent;
+}
+
+.menu-item:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  transform: translateX(8px);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.menu-item i {
+  margin-right: 12px;
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+}
+
+/* Logout Button Special Styling */
+.logout-btn {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  margin: 8px 0;
+  border-radius: 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(255, 107, 107, 0.3);
+}
+
+.logout-btn:hover {
+  background: linear-gradient(135deg, #ee5a24 0%, #ff6b6b 100%);
+  transform: translateX(8px) scale(1.02);
+  box-shadow: 0 4px 20px rgba(255, 107, 107, 0.5);
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+  min-height: calc(100vh - 80px);
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .p-menubar {
+    padding: 0.6rem 1rem;
+  }
+  
+  .p-menubar .p-menubar-start h2 {
+    font-size: 18px;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+}
