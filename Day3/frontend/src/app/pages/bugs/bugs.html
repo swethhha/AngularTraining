@@ -1,0 +1,78 @@
+<div class="bugs-container">
+  <h1><i class="pi pi-bug"></i> Bug Reports</h1>
+
+  <p-card>
+    <!-- Header -->
+    <ng-template pTemplate="header">
+      <div class="card-header flex justify-between items-center">
+        <span class="text-lg font-bold">All Bugs</span>
+        <button 
+          pButton 
+          label="New Bug" 
+          icon="pi pi-plus" 
+          class="p-button-primary">
+        </button>
+      </div>
+    </ng-template>
+
+    <!-- Loading Spinner -->
+    <div class="flex justify-center my-3" *ngIf="loading">
+      <p-progressSpinner></p-progressSpinner>
+    </div>
+
+    <!-- Bugs Table -->
+    <p-table *ngIf="!loading && bugs.length > 0" 
+             [value]="bugs" 
+             [paginator]="true" 
+             [rows]="5"
+             [tableStyle]="{'min-width': '60rem'}">
+
+      <!-- Table Header -->
+      <ng-template pTemplate="header">
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Actions</th>
+        </tr>
+      </ng-template>
+
+      <!-- Table Body -->
+      <ng-template pTemplate="body" let-bug>
+        <tr>
+          <td>{{ bug.id }}</td>
+          <td>{{ bug.title }}</td>
+          <td>{{ bug.description }}</td>
+          <td>
+            <button 
+              pButton 
+              icon="pi pi-eye" 
+              class="p-button-text p-button-sm" 
+              pTooltip="View">
+            </button>
+            <button 
+              pButton 
+              icon="pi pi-pencil" 
+              class="p-button-text p-button-sm" 
+              pTooltip="Edit">
+            </button>
+            <button 
+              pButton 
+              icon="pi pi-trash" 
+              class="p-button-text p-button-danger p-button-sm" 
+              pTooltip="Delete">
+            </button>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+
+    <!-- Empty State -->
+    <p-message 
+      *ngIf="!loading && bugs.length === 0" 
+      severity="info" 
+      text="No bugs found">
+    </p-message>
+
+  </p-card>
+</div>

@@ -1,0 +1,21 @@
+<p-menubar [model]="menuItems">
+  <ng-template pTemplate="start">
+    <h2 style="margin:0;">{{appName}}</h2>
+  </ng-template>
+  <ng-template pTemplate="end">
+    <button pButton type="button" icon="pi pi-bars" (click)="sidebarVisible = true"></button>
+  </ng-template>
+</p-menubar>
+
+<p-drawer [(visible)]="sidebarVisible" position="left" [modal]="true" [showCloseIcon]="true">
+  <h3 style="margin:10px;">Menu</h3>
+  <div *ngFor="let item of menuItems" style="margin:10px;">
+    <a [routerLink]="item.routerLink" (click)="sidebarVisible = false" style="text-decoration:none;color:inherit;">
+      <i [class]="item.icon"></i> {{ item.label }}
+    </a>
+  </div>
+</p-drawer>
+
+<main style="padding:16px;">
+  <router-outlet></router-outlet>
+</main>

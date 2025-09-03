@@ -1,0 +1,24 @@
+<div class="login-container">
+  <p-card class="login-card">
+    <ng-template pTemplate="header">
+      <div class="login-header">
+        <i class="pi pi-sign-in"></i>
+        <h2>Login</h2>
+      </div>
+    </ng-template>
+    
+    <div class="login-form">
+      <div class="field">
+        <label for="username">Username</label>
+        <input pInputText id="username" placeholder="Enter username" />
+      </div>
+      
+      <div class="field">
+        <label for="password">Password</label>
+        <p-password id="password" placeholder="Enter password" [feedback]="false"></p-password>
+      </div>
+      
+      <button pButton label="Login" icon="pi pi-sign-in" class="p-button-primary login-btn"></button>
+    </div>
+  </p-card>
+</div>
