@@ -1,0 +1,157 @@
+<!-- Projects Section -->
+<section class="projects-section" @slideInUp>
+  <div class="projects-container">
+    <!-- Section Header -->
+    <div class="section-header">
+      <h2 class="section-title">
+        <i class="pi pi-briefcase title-icon"></i>
+        My Projects
+      </h2>
+      <p class="section-subtitle">
+        Showcasing my passion for creating innovative solutions and beautiful user experiences
+      </p>
+    </div>
+
+    <!-- Featured Projects -->
+    <div class="featured-section">
+      <h3 class="featured-title">
+        <i class="pi pi-star"></i>
+        Featured Projects
+      </h3>
+      <div class="featured-grid" @staggerProjects>
+        <div *ngFor="let project of featuredProjects" class="featured-card project-card">
+          <div class="project-image-container">
+            <img [src]="project.image" [alt]="project.title" class="project-image">
+            <div class="project-overlay">
+              <div class="project-actions">
+                <button class="action-btn" (click)="openProject(project.liveUrl)" title="View Live">
+                  <i class="pi pi-external-link"></i>
+                </button>
+                <button class="action-btn" (click)="openProject(project.githubUrl)" title="View Code">
+                  <i class="pi pi-github"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-status" [style.background-color]="getStatusColor(project.status)">
+              {{ getStatusText(project.status) }}
+            </div>
+          </div>
+          <div class="project-content">
+            <h4 class="project-title">{{ project.title }}</h4>
+            <p class="project-description">{{ project.description }}</p>
+            <div class="project-technologies">
+              <span *ngFor="let tech of project.technologies" class="tech-tag">{{ tech }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Filter -->
+    <div class="filter-section">
+      <h3 class="filter-title">Browse by Category</h3>
+      <div class="category-filters">
+        <button *ngFor="let category of categories" 
+                class="filter-btn"
+                [class.active]="selectedCategory === category.id"
+                (click)="selectCategory(category.id)">
+          <i [class]="category.icon"></i>
+          <span>{{ category.name }}</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- All Projects -->
+    <div class="projects-grid" @staggerProjects>
+      <div *ngFor="let project of filteredProjects" class="project-card">
+        <div class="project-image-container">
+          <img [src]="project.image" [alt]="project.title" class="project-image">
+          <div class="project-overlay">
+            <div class="project-actions">
+              <button class="action-btn" (click)="openProject(project.liveUrl)" title="View Live">
+                <i class="pi pi-external-link"></i>
+              </button>
+              <button class="action-btn" (click)="openProject(project.githubUrl)" title="View Code">
+                <i class="pi pi-github"></i>
+              </button>
+            </div>
+          </div>
+          <div class="project-status" [style.background-color]="getStatusColor(project.status)">
+            {{ getStatusText(project.status) }}
+          </div>
+          <div *ngIf="project.featured" class="featured-badge">
+            <i class="pi pi-star"></i>
+          </div>
+        </div>
+        <div class="project-content">
+          <h4 class="project-title">{{ project.title }}</h4>
+          <p class="project-description">{{ project.description }}</p>
+          <div class="project-technologies">
+            <span *ngFor="let tech of project.technologies" class="tech-tag">{{ tech }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Stats -->
+    <div class="stats-section">
+      <div class="stat-card">
+        <div class="stat-icon">
+          <i class="pi pi-code"></i>
+        </div>
+        <div class="stat-content">
+          <h4>{{ projects.length }}+</h4>
+          <p>Projects Completed</p>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon">
+          <i class="pi pi-users"></i>
+        </div>
+        <div class="stat-content">
+          <h4>25+</h4>
+          <p>Happy Clients</p>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon">
+          <i class="pi pi-clock"></i>
+        </div>
+        <div class="stat-content">
+          <h4>1000+</h4>
+          <p>Hours Coded</p>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon">
+          <i class="pi pi-star"></i>
+        </div>
+        <div class="stat-content">
+          <h4>100%</h4>
+          <p>Success Rate</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="cta-section">
+      <div class="cta-content">
+        <h3>Have a Project in Mind?</h3>
+        <p>Let's collaborate and bring your ideas to life with cutting-edge technology and creative design.</p>
+        <div class="cta-actions">
+          <button class="cta-btn primary" routerLink="/contact">
+            <i class="pi pi-send"></i>
+            <span>Start a Project</span>
+          </button>
+          <button class="cta-btn secondary" (click)="openProject('mailto:swetha@example.com')">
+            <i class="pi pi-envelope"></i>
+            <span>Send Email</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

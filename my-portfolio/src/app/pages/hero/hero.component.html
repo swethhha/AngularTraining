@@ -1,0 +1,130 @@
+<!-- Hero Section -->
+<section class="hero-section" @heroAnimation>
+  <div class="hero-container">
+    <!-- Profile Image with Floating Animation -->
+    <div class="profile-section" @float>
+      <div class="profile-image-container">
+        <div class="profile-glow"></div>
+        <img src="profile.jpg" 
+             alt="Swetha Profile" 
+             class="profile-image">
+        <div class="profile-ring"></div>
+        <div class="profile-particles">
+          <div class="particle" *ngFor="let i of [1,2,3,4,5,6,7,8]"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <div class="greeting">
+        <span class="wave">👋</span>
+        <span class="greeting-text">Hello, I'm</span>
+      </div>
+      
+      <h1 class="hero-title">
+        <span class="name-highlight">Swetha</span>
+        <div class="title-decoration">
+          <div class="decoration-line"></div>
+          <i class="pi pi-star decoration-icon"></i>
+          <div class="decoration-line"></div>
+        </div>
+      </h1>
+      
+      <div class="role-container">
+        <span class="role-prefix">I'm a </span>
+        <span class="typewriter">{{ displayedText }}</span>
+        <span class="cursor">|</span>
+      </div>
+      
+      <p class="hero-description">
+        Passionate about creating exceptional digital experiences with modern technologies. 
+        I transform ideas into beautiful, functional applications that make a difference.
+      </p>
+      
+      <!-- Action Buttons -->
+      <div class="hero-actions">
+        <button class="btn-primary" routerLink="/projects">
+          <i class="pi pi-eye"></i>
+          <span>View My Work</span>
+          <div class="btn-glow"></div>
+        </button>
+        
+        <button class="btn-secondary" (click)="downloadResume()">
+          <i class="pi pi-download"></i>
+          <span>Download Resume</span>
+        </button>
+        
+        <button class="btn-contact" routerLink="/contact">
+          <i class="pi pi-send"></i>
+          <span>Let's Connect</span>
+        </button>
+      </div>
+      
+      <!-- Social Links -->
+      <div class="social-preview">
+        <span class="social-label">Find me on:</span>
+        <div class="social-icons">
+          <a href="https://github.com" target="_blank" class="social-icon github">
+            <i class="pi pi-github"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="social-icon linkedin">
+            <i class="pi pi-linkedin"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" class="social-icon twitter">
+            <i class="pi pi-twitter"></i>
+          </a>
+          <a href="mailto:swetha@example.com" class="social-icon email">
+            <i class="pi pi-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator">
+    <div class="scroll-text">Scroll to explore</div>
+    <div class="scroll-arrow">
+      <i class="pi pi-angle-down"></i>
+    </div>
+  </div>
+  
+  <!-- Floating Elements -->
+  <div class="floating-elements">
+    <div class="floating-icon" style="top: 20%; left: 10%; animation-delay: 0s;">
+      <i class="pi pi-code"></i>
+    </div>
+    <div class="floating-icon" style="top: 30%; right: 15%; animation-delay: 1s;">
+      <i class="pi pi-palette"></i>
+    </div>
+    <div class="floating-icon" style="bottom: 30%; left: 20%; animation-delay: 2s;">
+      <i class="pi pi-mobile"></i>
+    </div>
+    <div class="floating-icon" style="bottom: 40%; right: 10%; animation-delay: 3s;">
+      <i class="pi pi-globe"></i>
+    </div>
+  </div>
+</section>
+
+<!-- Quick Stats Section -->
+<section class="stats-section">
+  <div class="stats-container">
+    <div class="stat-item">
+      <div class="stat-number">50+</div>
+      <div class="stat-label">Projects Completed</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">3+</div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">Client Satisfaction</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">24/7</div>
+      <div class="stat-label">Coding Passion</div>
+    </div>
+  </div>
+</section>

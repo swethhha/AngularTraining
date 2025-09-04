@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Theme Preview</title>
+    <style>
+        /* Import the new theme variables */
+        :root {
+            /* Deep Royal Colors */
+            --royal-900: #0f0a1e;
+            --royal-800: #1a1332;
+            --royal-700: #2d1b4e;
+            --royal-600: #3f2463;
+            --royal-500: #512d78;
+            --royal-400: #6b3d9a;
+            --royal-300: #8b5fbf;
+            --royal-200: #b084d6;
+            --royal-100: #d4b3ed;
+            --royal-50: #f0e6ff;
+            
+            /* Subtle Purple Accents */
+            --purple-900: #1e1b3a;
+            --purple-800: #2d2a54;
+            --purple-700: #3c3a6e;
+            --purple-600: #4c4a88;
+            --purple-500: #5b5aa2;
+            --purple-400: #7c7bc4;
+            --purple-300: #9d9ce6;
+            --purple-200: #bebdff;
+            --purple-100: #dfdeff;
+            --purple-50: #f5f4ff;
+            
+            /* Professional Gradients */
+            --gradient-primary: linear-gradient(135deg, var(--royal-900) 0%, var(--royal-800) 25%, var(--purple-800) 75%, var(--purple-700) 100%);
+            --gradient-secondary: linear-gradient(135deg, var(--royal-800) 0%, var(--purple-800) 50%, var(--royal-700) 100%);
+            --gradient-accent: linear-gradient(135deg, var(--royal-400) 0%, var(--purple-400) 100%);
+            --gradient-glow: linear-gradient(135deg, var(--royal-300) 0%, var(--purple-300) 100%);
+            
+            /* Text Colors for Perfect Contrast */
+            --text-primary: #ffffff;
+            --text-secondary: #e2e8f0;
+            --text-muted: #cbd5e1;
+            
+            /* Background System */
+            --bg-card: rgba(45, 27, 78, 0.6);
+            --bg-card-hover: rgba(45, 27, 78, 0.8);
+            
+            /* Border System */
+            --border-primary: rgba(255, 255, 255, 0.1);
+            --border-accent: rgba(139, 95, 191, 0.4);
+            --border-glow: rgba(139, 95, 191, 0.6);
+            
+            /* Professional Shadow System */
+            --shadow-lg: 0 10px 15px -3px rgba(15, 10, 30, 0.5);
+            --shadow-glow: 0 0 20px rgba(139, 95, 191, 0.4);
+            
+            /* Professional Transitions */
+            --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--gradient-primary);
+            background-size: 400% 400%;
+            animation: gradientShift 20s ease infinite;
+            color: var(--text-primary);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .preview-section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            background: var(--gradient-glow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .card {
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-primary);
+            border-radius: 1rem;
+            padding: 2rem;
+            transition: all var(--transition-normal);
+            margin-bottom: 1rem;
+        }
+
+        .card:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--border-glow);
+            box-shadow: var(--shadow-lg), var(--shadow-glow);
+            transform: translateY(-5px);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.875rem 1.75rem;
+            border: none;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn-primary {
+            background: var(--gradient-accent);
+            color: white;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg), var(--shadow-glow);
+        }
+
+        .text-gradient {
+            background: var(--gradient-glow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="preview-section">
+            <h1 class="section-title">🎨 Professional Dark Theme Preview</h1>
+            <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2rem;">
+                Modern portfolio theme with royal blue, deep brown, and subtle purple gradient background with perfect light text contrast.
+            </p>
+        </div>
+
+        <div class="preview-section">
+            <h2 class="text-gradient">Color Palette & Typography</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3 style="color: var(--text-primary); margin-bottom: 1rem;">Primary Text</h3>
+                    <p style="color: var(--text-secondary);">Secondary text with perfect contrast for readability</p>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Muted text for subtle information</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--royal-300); margin-bottom: 1rem;">Royal Accent Colors</h3>
+                    <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                        <div style="width: 40px; height: 40px; background: var(--royal-300); border-radius: 50%;"></div>
+                        <div style="width: 40px; height: 40px; background: var(--royal-400); border-radius: 50%;"></div>
+                        <div style="width: 40px; height: 40px; background: var(--purple-300); border-radius: 50%;"></div>
+                        <div style="width: 40px; height: 40px; background: var(--purple-400); border-radius: 50%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="preview-section">
+            <h2 class="text-gradient">Interactive Elements</h2>
+            <div class="card">
+                <h3 style="margin-bottom: 1rem;">Buttons & Actions</h3>
+                <button class="btn btn-primary">Primary Action</button>
+                <button class="btn" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border-primary);">Secondary Action</button>
+            </div>
+        </div>
+
+        <div class="preview-section">
+            <h2 class="text-gradient">Card Components</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3 style="margin-bottom: 1rem;">About Section Style</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        Professional card with glass morphism effect, subtle borders, and elegant hover animations.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 style="margin-bottom: 1rem;">Projects Section Style</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        Consistent styling across all components with smooth transitions and professional shadows.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 style="margin-bottom: 1rem;">Skills Section Style</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">
+                        Modern dark theme with royal and purple accents creating a cohesive, professional appearance.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="preview-section">
+            <div class="card" style="text-align: center;">
+                <h2 class="text-gradient" style="margin-bottom: 1rem;">✨ Theme Applied Successfully!</h2>
+                <p style="color: var(--text-secondary); font-size: 1.1rem;">
+                    Your portfolio now features a modern, professional dark theme with:
+                </p>
+                <ul style="color: var(--text-secondary); text-align: left; margin: 1.5rem 0; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    <li>Royal blue, deep brown, and subtle purple gradient backgrounds</li>
+                    <li>Perfect light/white text contrast for readability</li>
+                    <li>Subtle professional animations and hover effects</li>
+                    <li>Clean, responsive, and elegant layout</li>
+                    <li>Consistent theme across About, Projects, Skills, and Contact sections</li>
+                </ul>
+                <button class="btn btn-primary" style="margin-top: 1rem;">Start Your Portfolio</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

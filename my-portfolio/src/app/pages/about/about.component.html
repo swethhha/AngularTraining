@@ -1,0 +1,190 @@
+<!-- About Section -->
+<section class="about-section" @slideInUp>
+  <div class="about-container">
+    <!-- Section Header -->
+    <div class="section-header">
+      <h2 class="section-title">
+        <i class="pi pi-user title-icon"></i>
+        About Me
+      </h2>
+      <p class="section-subtitle">
+        Passionate Full Stack Developer with a love for creating beautiful, functional, and user-centered digital experiences
+      </p>
+    </div>
+
+    <!-- Personal Introduction -->
+    <div class="intro-section">
+      <div class="intro-content">
+        <div class="intro-text">
+          <h3 class="intro-title">Hello! I'm {{ personalInfo.name }}</h3>
+          <p class="intro-description">
+            Hi, I'm Swetha T, a passionate Full-Stack Developer with strong foundations in Computer Science Engineering. 
+            I specialize in web development, full-stack development, and backend systems, combining both technical 
+            and problem-solving skills to build impactful applications.
+          </p>
+          <p class="intro-description">
+            With hands-on experience in machine learning, smart systems, and enterprise web projects, I enjoy creating 
+            solutions that are both user-centric and efficient. My expertise spans across modern web technologies, 
+            neural networks, and IoT-based systems.
+          </p>
+          <p class="intro-description">
+            I'm passionate about leveraging technology to solve real-world problems, from optimizing ML models for 
+            resource-limited devices to building comprehensive inventory management systems for industry applications.
+          </p>
+          
+          <div class="intro-actions">
+            <a href="assests/resume.pdf" download="Swetha_T_Resume.pdf" class="btn-primary">
+              <i class="pi pi-download"></i>
+              <span>Download Resume</span>
+            </a>
+          </div>
+          
+          <div class="follow-section">
+            <h4 class="follow-title">Follow Me</h4>
+            <div class="social-links">
+              <a href="https://github.com/swethat" target="_blank" class="social-link github">
+                <i class="pi pi-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com/in/swethat" target="_blank" class="social-link linkedin">
+                <i class="pi pi-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="intro-image">
+          <div class="image-container">
+            <img src="profile.jpg" 
+                 alt="Swetha" class="profile-img">
+            <div class="image-overlay">
+              <div class="overlay-content">
+                <h4>{{ personalInfo.title }}</h4>
+                <p>{{ personalInfo.location }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon">
+          <i class="pi pi-calendar"></i>
+        </div>
+        <div class="stat-content">
+          <h4>{{ personalInfo.experience }}</h4>
+          <p>Experience</p>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon">
+          <i class="pi pi-briefcase"></i>
+        </div>
+        <div class="stat-content">
+          <h4>{{ personalInfo.projects }}</h4>
+          <p>Projects</p>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon">
+          <i class="pi pi-check-circle"></i>
+        </div>
+        <div class="stat-content">
+          <h4>{{ personalInfo.clients }}</h4>
+          <p>Client Satisfaction</p>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon">
+          <i class="pi pi-clock"></i>
+        </div>
+        <div class="stat-content">
+          <h4>24/7</h4>
+          <p>Support Available</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline-section" @staggerAnimation>
+      <h3 class="section-subtitle-large">My Journey</h3>
+      <div class="timeline">
+        <div *ngFor="let item of timeline; let i = index" 
+             class="timeline-item" 
+             [class.work]="item.type === 'work'"
+             [class.education]="item.type === 'education'">
+          <div class="timeline-marker">
+            <div class="timeline-icon">
+              <i [class]="item.type === 'work' ? 'pi pi-briefcase' : 'pi pi-graduation-cap'"></i>
+            </div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-year">{{ item.year }}</span>
+              <h4 class="timeline-title">{{ item.title }}</h4>
+              <p class="timeline-company">{{ item.company }}</p>
+            </div>
+            <p class="timeline-description">{{ item.description }}</p>
+            <div class="timeline-technologies">
+              <span *ngFor="let tech of item.technologies" class="tech-tag">{{ tech }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Values & Principles -->
+    <div class="values-section" @staggerAnimation>
+      <h3 class="section-subtitle-large">My Values</h3>
+      <div class="values-grid">
+        <div *ngFor="let value of values" class="value-card">
+          <div class="value-icon" [style.background-color]="value.color + '20'" [style.border-color]="value.color + '40'">
+            <i [class]="value.icon" [style.color]="value.color"></i>
+          </div>
+          <div class="value-content">
+            <h4 class="value-title">{{ value.title }}</h4>
+            <p class="value-description">{{ value.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interests & Hobbies -->
+    <div class="interests-section">
+      <h3 class="section-subtitle-large">Interests & Hobbies</h3>
+      <div class="interests-grid">
+        <div *ngFor="let interest of interests" class="interest-item">
+          <div class="interest-icon">
+            <i [class]="interest.icon"></i>
+          </div>
+          <span class="interest-name">{{ interest.name }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact CTA -->
+    <div class="contact-cta">
+      <div class="cta-content">
+        <h3>Let's Work Together!</h3>
+        <p>I'm always interested in new opportunities and exciting projects. Let's connect and create something amazing together.</p>
+        <div class="cta-actions">
+          <button class="btn-primary" (click)="sendEmail()">
+            <i class="pi pi-envelope"></i>
+            <span>Send Email</span>
+          </button>
+          <button class="btn-secondary" routerLink="/contact">
+            <i class="pi pi-send"></i>
+            <span>Contact Form</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

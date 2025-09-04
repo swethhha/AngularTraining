@@ -1,0 +1,167 @@
+<!-- Skills Section -->
+<section class="skills-section" @slideInUp>
+  <div class="skills-container">
+    <!-- Section Header -->
+    <div class="section-header">
+      <h2 class="section-title">
+        <i class="pi pi-star title-icon"></i>
+        My Skills & Expertise
+      </h2>
+      <p class="section-subtitle">
+        Passionate about learning and mastering cutting-edge technologies to create exceptional digital experiences
+      </p>
+    </div>
+
+    <!-- Skills Charts -->
+    <div class="charts-section">
+      <div class="chart-container">
+        <h3 class="chart-title">
+          <i class="pi pi-chart-line"></i>
+          Technical Proficiency
+        </h3>
+        <div class="chart-wrapper">
+          <canvas #skillsChart></canvas>
+        </div>
+      </div>
+      
+      <div class="chart-container">
+        <h3 class="chart-title">
+          <i class="pi pi-chart-pie"></i>
+          Experience Distribution
+        </h3>
+        <div class="chart-wrapper">
+          <canvas #experienceChart></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Skills -->
+    <div class="skills-category" @staggerAnimation>
+      <h3 class="category-title">
+        <i class="pi pi-code"></i>
+        Technical Skills
+      </h3>
+      <div class="skills-grid">
+        <div *ngFor="let skill of technicalSkills" class="skill-item">
+          <div class="skill-header">
+            <div class="skill-info">
+              <i [class]="skill.icon" [style.color]="skill.color"></i>
+              <span class="skill-name">{{ skill.name }}</span>
+            </div>
+            <span class="skill-percentage">{{ skill.level }}%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" 
+                 [style.width]="getSkillProgress(skill.level)"
+                 [style.background]="'linear-gradient(90deg, ' + skill.color + ', ' + skill.color + '80)'">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Design Skills -->
+    <div class="skills-category" @staggerAnimation>
+      <h3 class="category-title">
+        <i class="pi pi-palette"></i>
+        Design Skills
+      </h3>
+      <div class="skills-grid">
+        <div *ngFor="let skill of designSkills" class="skill-item">
+          <div class="skill-header">
+            <div class="skill-info">
+              <i [class]="skill.icon" [style.color]="skill.color"></i>
+              <span class="skill-name">{{ skill.name }}</span>
+            </div>
+            <span class="skill-percentage">{{ skill.level }}%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" 
+                 [style.width]="getSkillProgress(skill.level)"
+                 [style.background]="'linear-gradient(90deg, ' + skill.color + ', ' + skill.color + '80)'">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tools & Technologies -->
+    <div class="tools-section" @slideInUp>
+      <h3 class="category-title">
+        <i class="pi pi-wrench"></i>
+        Tools & Technologies
+      </h3>
+      <div class="tools-grid">
+        <div *ngFor="let tool of tools" class="tool-item">
+          <div class="tool-icon" [style.background]="'linear-gradient(45deg, ' + tool.color + '20, ' + tool.color + '40)'">
+            <i [class]="tool.icon" [style.color]="tool.color"></i>
+          </div>
+          <span class="tool-name">{{ tool.name }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="certifications-section" @slideInUp>
+      <h3 class="category-title">
+        <i class="pi pi-verified"></i>
+        Certifications & Achievements
+      </h3>
+      <div class="certifications-grid">
+        <div *ngFor="let cert of certifications" class="certification-item">
+          <div class="cert-icon">
+            <i [class]="cert.icon"></i>
+          </div>
+          <div class="cert-content">
+            <h4 class="cert-name">{{ cert.name }}</h4>
+            <p class="cert-issuer">{{ cert.issuer }}</p>
+            <span class="cert-year">{{ cert.year }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Summary -->
+    <div class="skills-summary" @slideInUp>
+      <div class="summary-card">
+        <div class="summary-icon">
+          <i class="pi pi-trophy"></i>
+        </div>
+        <div class="summary-content">
+          <h4>3+ Years</h4>
+          <p>Professional Experience</p>
+        </div>
+      </div>
+      
+      <div class="summary-card">
+        <div class="summary-icon">
+          <i class="pi pi-code"></i>
+        </div>
+        <div class="summary-content">
+          <h4>50+ Projects</h4>
+          <p>Successfully Completed</p>
+        </div>
+      </div>
+      
+      <div class="summary-card">
+        <div class="summary-icon">
+          <i class="pi pi-users"></i>
+        </div>
+        <div class="summary-content">
+          <h4>100% Satisfaction</h4>
+          <p>Client Happiness Rate</p>
+        </div>
+      </div>
+      
+      <div class="summary-card">
+        <div class="summary-icon">
+          <i class="pi pi-star"></i>
+        </div>
+        <div class="summary-content">
+          <h4>15+ Technologies</h4>
+          <p>Mastered & Applied</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

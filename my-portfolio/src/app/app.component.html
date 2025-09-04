@@ -1,0 +1,57 @@
+<!-- Animated Background -->
+<div class="animated-bg">
+  <div class="gradient-orb orb-1"></div>
+  <div class="gradient-orb orb-2"></div>
+  <div class="gradient-orb orb-3"></div>
+  <div class="stars"></div>
+</div>
+
+<!-- Glassmorphism Navigation -->
+<nav class="navbar" [class.scrolled]="isScrolled()" @slideIn>
+  <div class="nav-container">
+    <div class="nav-brand" (click)="scrollToTop()">
+      <i class="pi pi-code brand-icon"></i>
+      <span class="brand-text">{{ brand }}</span>
+    </div>
+    
+    <div class="nav-links desktop-nav">
+      <a *ngFor="let link of links" 
+         [routerLink]="link.path" 
+         routerLinkActive="active"
+         class="nav-link">
+        <i [class]="link.icon"></i>
+        <span>{{ link.label }}</span>
+      </a>
+    </div>
+    
+    <button class="mobile-toggle" (click)="toggleMenu()">
+      <i class="pi" [class.pi-bars]="!opened()" [class.pi-times]="opened()"></i>
+    </button>
+  </div>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-nav" [class.open]="opened()">
+    <a *ngFor="let link of links" 
+       [routerLink]="link.path" 
+       routerLinkActive="active"
+       class="mobile-link"
+       (click)="toggleMenu()">
+      <i [class]="link.icon"></i>
+      <span>{{ link.label }}</span>
+    </a>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<main class="main-content" @fadeIn>
+  <router-outlet></router-outlet>
+</main>
+
+<!-- Floating Action Button -->
+<button class="fab" 
+        [class.visible]="isScrolled()" 
+        (click)="scrollToTop()"
+        title="Back to top">
+  <i class="pi pi-angle-up"></i>
+</button>
+

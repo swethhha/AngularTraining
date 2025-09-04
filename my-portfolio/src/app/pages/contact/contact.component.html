@@ -1,0 +1,229 @@
+<!-- Contact Section -->
+<section class="contact-section" @slideInUp>
+  <div class="contact-container">
+    <!-- Section Header -->
+    <div class="section-header">
+      <h2 class="section-title">
+        <i class="pi pi-send title-icon"></i>
+        Let's Connect
+      </h2>
+      <p class="section-subtitle">
+        Ready to start your next project? Let's discuss how we can work together to bring your ideas to life.
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="contact-content">
+      <!-- Contact Form -->
+      <div class="contact-form-section" @fadeIn>
+        <div class="form-header">
+          <h3>Send Me a Message</h3>
+          <p>I'd love to hear from you. Send me a message and I'll respond as soon as possible.</p>
+        </div>
+
+        <!-- Success Message -->
+        <div *ngIf="isSubmitted" class="success-message">
+          <i class="pi pi-check-circle"></i>
+          <h4>Message Sent Successfully!</h4>
+          <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+        </div>
+
+        <!-- Contact Form -->
+        <form *ngIf="!isSubmitted" (ngSubmit)="onSubmit()" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <div class="input-container">
+                <i class="pi pi-user input-icon"></i>
+                <input 
+                  type="text" 
+                  id="name" 
+                  [(ngModel)]="contactForm.name" 
+                  name="name"
+                  placeholder="Enter your full name"
+                  required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <div class="input-container">
+                <i class="pi pi-envelope input-icon"></i>
+                <input 
+                  type="email" 
+                  id="email" 
+                  [(ngModel)]="contactForm.email" 
+                  name="email"
+                  placeholder="Enter your email address"
+                  required>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <div class="input-container">
+              <i class="pi pi-tag input-icon"></i>
+              <input 
+                type="text" 
+                id="subject" 
+                [(ngModel)]="contactForm.subject" 
+                name="subject"
+                placeholder="What's this about?"
+                required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <div class="input-container">
+              <i class="pi pi-comment input-icon"></i>
+              <textarea 
+                id="message" 
+                [(ngModel)]="contactForm.message" 
+                name="message"
+                placeholder="Tell me about your project or inquiry..."
+                rows="6"
+                required></textarea>
+            </div>
+          </div>
+
+          <button 
+            type="submit" 
+            class="submit-btn"
+            [disabled]="!isValidForm() || isSubmitting"
+            [class.loading]="isSubmitting">
+            <span *ngIf="!isSubmitting">
+              <i class="pi pi-send"></i>
+              Send Message
+            </span>
+            <span *ngIf="isSubmitting">
+              <i class="pi pi-spin pi-spinner"></i>
+              Sending...
+            </span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="contact-info-section" @fadeIn>
+        <div class="info-header">
+          <h3>Get in Touch</h3>
+          <p>Prefer to reach out directly? Here are the best ways to contact me.</p>
+        </div>
+
+        <div class="contact-methods">
+          <div *ngFor="let info of contactInfo" class="contact-method" (click)="openLink(info.link)">
+            <div class="method-icon" [style.background-color]="info.color + '20'" [style.border-color]="info.color + '40'">
+              <i [class]="info.icon" [style.color]="info.color"></i>
+            </div>
+            <div class="method-content">
+              <h4>{{ info.title }}</h4>
+              <p>{{ info.value }}</p>
+            </div>
+            <i class="pi pi-external-link method-arrow"></i>
+          </div>
+        </div>
+
+        <!-- Services -->
+        <div class="services-section">
+          <h4>What I Can Help With</h4>
+          <div class="services-grid">
+            <div *ngFor="let service of services" class="service-item">
+              <div class="service-icon">
+                <i [class]="service.icon"></i>
+              </div>
+              <div class="service-content">
+                <h5>{{ service.title }}</h5>
+                <p>{{ service.description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-section">
+          <h4>Follow Me</h4>
+          <div class="social-links">
+            <a *ngFor="let social of socialLinks" 
+               [href]="social.url" 
+               target="_blank" 
+               class="social-link"
+               [style.background-color]="social.color + '20'"
+               [style.border-color]="social.color + '40'">
+              <i [class]="social.icon" [style.color]="social.color"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="quick-actions">
+      <div class="action-card">
+        <div class="action-icon">
+          <i class="pi pi-calendar"></i>
+        </div>
+        <div class="action-content">
+          <h4>Schedule a Call</h4>
+          <p>Book a free 30-minute consultation to discuss your project</p>
+          <button class="action-btn" (click)="openLink('https://calendly.com')">
+            <i class="pi pi-calendar-plus"></i>
+            Book Now
+          </button>
+        </div>
+      </div>
+
+      <div class="action-card">
+        <div class="action-icon">
+          <i class="pi pi-download"></i>
+        </div>
+        <div class="action-content">
+          <h4>Download Resume</h4>
+          <p>Get a detailed overview of my experience and skills</p>
+          <button class="action-btn" (click)="downloadResume()">
+            <i class="pi pi-file-pdf"></i>
+            Download PDF
+          </button>
+        </div>
+      </div>
+
+      <div class="action-card">
+        <div class="action-icon">
+          <i class="pi pi-briefcase"></i>
+        </div>
+        <div class="action-content">
+          <h4>View Portfolio</h4>
+          <p>Explore my latest projects and case studies</p>
+          <button class="action-btn" routerLink="/projects">
+            <i class="pi pi-eye"></i>
+            View Work
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq-section">
+      <h3>Frequently Asked Questions</h3>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>What's your typical response time?</h4>
+          <p>I usually respond to emails within 24 hours, often much sooner during business hours.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Do you work with international clients?</h4>
+          <p>Absolutely! I work with clients worldwide and am comfortable with different time zones.</p>
+        </div>
+        <div class="faq-item">
+          <h4>What's your project process?</h4>
+          <p>I start with a discovery call, then provide a detailed proposal with timeline and milestones.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Do you offer ongoing support?</h4>
+          <p>Yes, I provide maintenance and support packages for all projects I develop.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
