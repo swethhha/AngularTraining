@@ -10,16 +10,7 @@ import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { ConfirmationService, MessageService } from 'primeng/api';
 import { ToastModule } from 'primeng/toast';
 import { FormsModule } from '@angular/forms';
-import { BugService } from '../../services/bug.service';
-
-export interface Bug {
-  id: number;
-  title: string;
-  description: string;
-  status: string;
-  priority: string;
-  createdDate: Date;
-}
+import { BugService, Bug } from '../../services/bug.service';
 
 
 @Component({
@@ -48,6 +39,8 @@ export class BugsComponent implements OnInit {
   globalSearchValue: string = '';
   statuses = [{ label: 'All Status', value: '' }, { label: 'Open', value: 'Open' }, { label: 'In Progress', value: 'In Progress' }, { label: 'Resolved', value: 'Resolved' }, { label: 'Closed', value: 'Closed' }];
   priorities = [{ label: 'All Priority', value: '' }, { label: 'Low', value: 'Low' }, { label: 'Medium', value: 'Medium' }, { label: 'High', value: 'High' }, { label: 'Critical', value: 'Critical' }];
+  statusOptions = [{ label: 'Open', value: 'Open' }, { label: 'In Progress', value: 'In Progress' }, { label: 'Resolved', value: 'Resolved' }, { label: 'Closed', value: 'Closed' }];
+  priorityOptions = [{ label: 'Low', value: 'Low' }, { label: 'Medium', value: 'Medium' }, { label: 'High', value: 'High' }, { label: 'Critical', value: 'Critical' }];
   selectedStatus: string = '';
   selectedPriority: string = '';
   clonedBugs: { [s: string]: Bug } = {};

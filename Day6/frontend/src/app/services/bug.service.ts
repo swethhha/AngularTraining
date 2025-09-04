@@ -9,7 +9,7 @@ export interface Bug {
   description: string;
   status: string;
   priority: string;
-  createdDate: Date;
+  createdOn: Date;
 }
 
 @Injectable({ providedIn: "root" })
