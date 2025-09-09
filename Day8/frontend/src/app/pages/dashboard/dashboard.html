@@ -1,0 +1,94 @@
+<!-- Admin Dashboard for Admin users -->
+<div *ngIf="isAdmin" class="admin-dashboard">
+  <div class="dashboard-header">
+    <h1>Admin Dashboard</h1>
+    <p>Bug tracking statistics and insights</p>
+  </div>
+
+  <div class="stats-grid">
+    <!-- Status Cards -->
+    <div class="stat-card red">
+      <div class="stat-header">Open Bugs</div>
+      <div class="stat-number red">{{stats.openCount}}</div>
+    </div>
+    
+    <div class="stat-card green">
+      <div class="stat-header">Resolved Bugs</div>
+      <div class="stat-number green">{{stats.resolvedCount}}</div>
+    </div>
+
+    <!-- Priority Cards -->
+    <div class="stat-card yellow">
+      <div class="stat-header">In Progress</div>
+      <div class="stat-number large yellow">{{stats.inProgressCount}}</div>
+    </div>
+
+    <div class="stat-card gray">
+      <div class="stat-header">Closed</div>
+      <div class="stat-number large gray">{{stats.closedCount}}</div>
+    </div>
+
+    <div class="stat-card red">
+      <div class="stat-header">Critical Priority</div>
+      <div class="stat-number large red">{{stats.criticalCount}}</div>
+    </div>
+
+    <div class="stat-card orange">
+      <div class="stat-header">High Priority</div>
+      <div class="stat-number large orange">{{stats.highCount}}</div>
+    </div>
+
+    <div class="stat-card teal">
+      <div class="stat-header">Medium Priority</div>
+      <div class="stat-number large teal">{{stats.mediumCount}}</div>
+    </div>
+
+    <div class="stat-card green">
+      <div class="stat-header">Low Priority</div>
+      <div class="stat-number large green">{{stats.lowCount}}</div>
+    </div>
+
+    <div class="stat-card dark">
+      <div class="stat-header">Total Bugs</div>
+      <div class="stat-number large dark">{{stats.totalCount}}</div>
+    </div>
+
+    <!-- Recent Activity Card -->
+    <div class="stat-card activity">
+      <div class="stat-header">Recent Activity</div>
+      <div class="activity-stats">
+        <div class="activity-item">
+          <span class="activity-label">Today:</span>
+          <span class="activity-value">{{stats.todayCount}}</span>
+        </div>
+        <div class="activity-item">
+          <span class="activity-label">This Week:</span>
+          <span class="activity-value">{{stats.weekCount}}</span>
+        </div>
+        <div class="activity-item">
+          <span class="activity-label">This Month:</span>
+          <span class="activity-value">{{stats.monthCount}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Normal Dashboard for other users -->
+<div *ngIf="!isAdmin" class="dashboard-container">
+  <div class="welcome-section">
+    <h1>Welcome to Bug Dashboard</h1>
+    <p>Manage and track bugs efficiently</p>
+    <div class="user-info" *ngIf="userRole">
+      <span class="role-badge">Role: {{userRole}}</span>
+    </div>
+  </div>
+
+  <div class="quick-actions">
+    <div class="action-card">
+      <h3>Bug Management</h3>
+      <p>View and manage all bugs in the system</p>
+      <a routerLink="/bugs" class="action-btn">Go to Bugs</a>
+    </div>
+  </div>
+</div>
